@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <title>Your Name — Portfolio</title>
+    <meta name="description" content="Portfolio and skills of Your Name" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#"> <span id="brand-initials">YN</span> <span id="brand-name">Your Name</span></a>
+        <nav class="nav">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-inner">
+          <div class="hero-text">
+            <h1 id="hero-name">Your Name</h1>
+            <p id="hero-role" class="subtitle">Your Role</p>
+            <p id="hero-summary" class="summary">Short one-liner about who you are and what you do.</p>
+            <div class="actions">
+              <a id="cta-primary" class="button primary" href="#contact">Contact Me</a>
+              <a id="cta-secondary" class="button ghost" href="#projects">See Projects</a>
+            </div>
+          </div>
+          <div class="hero-card">
+            <div class="card">
+              <div class="card-section">
+                <div class="stat">
+                  <span class="stat-label">Location</span>
+                  <span id="stat-location" class="stat-value">City, Country</span>
+                </div>
+                <div class="stat">
+                  <span class="stat-label">Experience</span>
+                  <span id="stat-experience" class="stat-value">X+ years</span>
+                </div>
+              </div>
+              <div class="card-section">
+                <span class="stat-label">Currently focused on</span>
+                <div id="stat-focus" class="chips"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section">
+        <div class="container">
+          <h2>Skills</h2>
+          <div id="skills-content" class="skills-grid">
+            <!-- Populated by script.js -->
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section alt">
+        <div class="container">
+          <h2>Projects</h2>
+          <div id="projects-grid" class="projects-grid">
+            <!-- Populated by script.js -->
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container about-grid">
+          <div>
+            <h2>About</h2>
+            <p id="about-text">I’m a [your role] based in [your location], passionate about building high-quality products that solve real problems. I value clear communication, thoughtful design, and reliable execution.</p>
+          </div>
+          <div class="info-list" id="about-info">
+            <!-- Populated by script.js -->
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="container contact-card">
+          <div>
+            <h2>Contact</h2>
+            <p>Want to collaborate or have a role in mind? I’d love to hear from you.</p>
+          </div>
+          <div class="contact-actions">
+            <a id="email-link" class="button primary" href="mailto:you@example.com">Email Me</a>
+            <div id="social-links" class="social-links"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <span id="footer-name">© <span id="footer-year"></span> Your Name</span>
+        <a href="#" class="back-to-top">Back to top ↑</a>
+      </div>
+    </footer>
+
+    <script type="module" src="./script.js"></script>
+  </body>
+</html>
